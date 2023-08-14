@@ -14,19 +14,178 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: oldlace;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+/* Styles.css (or your preferred style file) */
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns in one row */
+  grid-gap: 40px; /* Adjust spacing between cards */
+}
+
+.card {
+  border: 1px solid #ddd; /* Add a border to the card */
+  padding: 10px;
+  display: inline-block;
+}
+
+.card.selected {
+  border-color: gray; /* Adjust selected border color */
+}
+
+.card-circle {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make it circular */
+  transition: background-color 0.3s ease-in-out; /* Add transition for smooth color change */
+}
+
+
+.bi {
+  font-size: 1.5rem; /* Adjust the icon size */
+}
+
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #5A5A5A;
+  margin-right: 6px;
+  background-color: transparent;
+}
+
+.custom-radio:checked {
+  background-color: #5A5A5A;
+  border-color: #5A5A5A;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 20px;
+}
+
+.priority-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.grid-cell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px; /* Set a fixed width for each cell */
+  height: 100px; /* Set a fixed height for each cell */
+  margin: 5px;
+}
+
+.priority-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.priority-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.grid-cell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  width: 200px; /* Set a fixed width for each cell */
+  height: 250px; /* Set a fixed height for each cell */
+  display: flex;
+  flex-direction: column;
+}
+
+.status-section {
+  margin-top: 10px;
+}
+
+.priority-title,
+.status-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.priority-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.grid-cell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  width: 200px; /* Set a fixed width for each cell */
+  height: 250px; /* Set a fixed height for each cell */
+  display: flex;
+  flex-direction: column;
+}
+
+.status-section {
+  margin-top: 10px;
+}
+
+.priority-title,
+.status-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 
 @keyframes App-logo-spin {
   from {
